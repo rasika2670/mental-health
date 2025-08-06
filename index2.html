@@ -205,6 +205,50 @@
     </div>
   </section>
 
+
+  <section id="hero-section" style="height: 100vh; display: flex; flex-direction: row; flex-wrap: wrap;
+  padding: 100px 0px;">
+
+  <div style="width: 40%; padding: 50px;">
+    <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px;">
+      MENTAL <span style="color: #ff6a00;">HEALTH</span>
+    </h1>
+    <p style="font-size: 1.1rem; color: #555; margin-bottom: 30px; line-height: 1.6;">
+      Prioritize your emotional well-being. Discover practical support, mindfulness tools, and real healing with us.
+    </p>
+    <a href="#" style="
+    background-color: #6c3df4;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  ">MORE INFO</a>
+  </div>
+
+  <div style="width: 60%; height: 100%;">
+    <video autoplay muted loop playsinline style="height: auto; width: 100%; object-fit: cover;">
+      <source src="./Assets/Maan Shanti 7.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+<script>
+  const section = document.getElementById("hero-section");
+  if (window.innerWidth < 768) {
+    section.style.flexDirection = "column";
+    section.children[0].style.width = "100%";
+    section.children[1].style.width = "100%";
+    section.children[0].style.padding = "30px 20px";
+    section.style.height = "auto";
+  }
+</script>
+
+
 </body>
 
 </html>
